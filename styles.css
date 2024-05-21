@@ -39,11 +39,20 @@ a {
 }
 
 a:link {
-  color: #0066cc !important;
+  color: #0066cc;
+}
+
+a:visited {
+  color: #551a8b;
 }
 
 a:hover {
+  color: #ff6f00;
   text-decoration: underline;
+}
+
+a:active {
+  color: #ff0000;
 }
 
 p.special {
@@ -94,4 +103,42 @@ dt {
 
 dd {
   margin-left: 20px;
+}
+
+.float-left {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.float-right {
+  float: right;
+  margin: 0 0 20px 20px;
+}
+
+.relative {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  background-color: #ddd;
+}
+
+.absolute {
+  position: absolute;
+  bottom: -100px;
+  left: 50px;
+  padding: 10px;
+  background-color: #bbb;
+}
+
+ul li:first-child {
+  color: #ff6f00;
+}
+
+h1:before {
+  content: "✨ ";
+}
+
+h1:after {
+  content: " ✨";
 }
