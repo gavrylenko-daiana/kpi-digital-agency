@@ -15,15 +15,21 @@
         line-height: 1.6;
         text-align: justify;
       }
+
+      .highlight {
+        background-color: yellow;
+      }
     </style>
   </head>
 
   <body>
     <div class="relative">
-      <h1>Welcome to Digiency</h1>
+      <h1 id="page-title">Welcome to Digiency</h1>
     </div>
 
-    <div id="inner-html-example" style="margin-top: 20px;"></div>
+    <h2 id="page-description">Description...</h2>
+
+    <div id="inner-html-example" style="margin-top: 20px"></div>
     <div id="outer-html-example"></div>
     <div id="text-content-example"></div>
 
@@ -47,7 +53,7 @@
 
     <div>
       <h2>Our Services <span>Offered</span></h2>
-      <ul type="circle">
+      <ul type="circle" id="services-list">
         <li>Graphic Design</li>
         <li>UI/UX Design</li>
         <li>Web Development</li>
@@ -78,6 +84,14 @@
 
     <p>Visit our <a href="about-us.html">About Us</a> page to learn more about our company.</p>
 
+    <button id="alert-button" onclick="showAlert()">Show Alert</button>
+    <button id="confirm-button">Show Confirm</button>
+
+    <div id="menu">
+      <button data-action="showAlert">Show Alert</button>
+      <button data-action="showConfirm">Show Confirm</button>
+    </div>
+
     <script>
       // alert("Welcome to Digiency!");
 
@@ -98,7 +112,7 @@
       // console.log(userConfirmed);
     </script>
 
-
     <script src="script.js"></script>
+    <script src="script-lab7.js"></script>
   </body>
 </html>
